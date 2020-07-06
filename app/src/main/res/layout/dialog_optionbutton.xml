@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center">
+    <ImageView
+        android:id="@+id/cerrardialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_circleone"
+        android:padding="5dp"
+        android:src="@drawable/icono_cerrar" />
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/dialogstyletop"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seleccione su Ruta"
+                android:textColor="#fff"
+                android:textSize="20dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/dialogstylebottom"
+            android:padding="20dp"
+            android:gravity="center">
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+                <RadioButton
+                    android:id="@+id/jp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:padding="3dp"
+                    android:text="Juliaca - Puno"
+                    android:textSize="20sp"
+                    android:theme="@style/RadioButtonStyle"
+                    />
+                <RadioButton
+                    android:id="@+id/pj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:padding="3dp"
+                    android:text="Puno - Juliaca"
+                    android:textSize="20sp"/>
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nota: Debe estar Activado el GPS. Para su correcto funcionamiento"
+                android:gravity="center"/>
+
+            <Switch
+                android:id="@+id/emulation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Probar Emulacion "
+                android:layout_marginTop="12dp"
+                />
+            <Button
+                android:id="@+id/iniciarruta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/custom_circlefive"
+                android:text="Navegar Ahora"
+                android:clickable="true"
+                android:textColor="#fff"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

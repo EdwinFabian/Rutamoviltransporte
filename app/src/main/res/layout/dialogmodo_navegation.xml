@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="250dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/dialogstyle">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nota: Desea Probar (Emular) o Desea experimentar (GPS)"
+        android:gravity="center"
+        android:padding="20dp"
+        android:textColor="#fff"
+        android:layout_marginTop="40dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        >
+        <Button
+            android:id="@+id/modoNavigationEmuler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emular"
+            android:layout_margin="10dp"
+            android:textColor="#fff"
+            android:background="@drawable/custom_circlefive"
+            />
+        <Button
+            android:id="@+id/modoNavigationGPS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GPS"
+            android:layout_margin="10dp"
+            android:textColor="#fff"
+            android:background="@drawable/custom_circlefive"/>
+        <!--Es para añadir estilo al boton.
+        style="@style/Widget.AppCompat.Button.Colored"-->
+    </LinearLayout>
+</LinearLayout>

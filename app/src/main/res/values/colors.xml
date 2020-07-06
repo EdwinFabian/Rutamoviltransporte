@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#000202</color>
+    <color name="colorPrimaryDarkOne">#8c7b75</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorVioletDark">#6C3483</color>
+    <color name="colorReed">#FF0000</color>
+
+    <!--Catalogo-->
+    <color name="viewBg">#f1f5f8</color>
+    <color name="album_title">#4c4c4c</color>
+
+    //color tabLayout
+    <color name="colorBlue_1">#3F51B5</color>
+    <color name="colorBlue_2">#303F9F</color>
+    <color name="colorPink_1">#FF4081</color>
+    <color name="f">#F5542D</color>
+    <color name="f_dark">#FA2E0A</color>
+    <color name="s">#0F9D58</color>
+    <color name="t">#FF1744</color>
+    <color name="four">#019BF0</color>
+    <color name="velocidad">#2196F3</color>
+    <color name="unselected_tab_color">#b3ffffff</color>
+    <color name="selected_tab_color">#ffffff</color>
+
+    <color name="colorYellowOrange">#c77c02</color>
+    <color name="colorGreen">#00600f</color>
+    <color name="colorStartBlue">#09c6df</color>
+    <color name="colorPink">#f50057</color>
+    <color name="colorViolet">#aa00ff</color>
+    <color name="colorOrange">#e53935</color>
+    <color name="coloryellowblack">#D35400</color>
+
+    <color name="lightgray">#ededed</color>
+    <color name="currentscheme">#bdbdbd</color>
+
+    <color name="mapboxWhite">#ffffff</color>
+    <color name="mapboxGrayLight">#c6d2e1</color>
+    <color name="mapboxRed">#b43b71</color>
+    <color name="GreyTransparent">#55A0A0A0</color>
+    <color name="BlackTransparent">#44ffffff</color>
+    <color name="Transparent">#6D302D2D</color>
+    <color name="TransparentTotal">#00302D2D</color>
+
+    <color name="negro_semitransparente">#B2000000</color>
+    <color name="white">#fafafa</color>
+
+    <color name="mapbox_navigation_location_shield_layer_color">#6800BCD4</color>
+
+    <!-- Primary route colors -->
+    <color name="mapbox_navigation_route_layer_blue">#ffb300</color>
+    <color name="mapbox_navigation_route_layer_congestion_yellow">#ff8f00</color>
+    <color name="mapbox_navigation_route_layer_congestion_red">#E93340</color>
+    <color name="mapbox_navigation_route_shield_layer_color">#c67100</color>
+    <!-- Alternative route colors -->
+    <color name="mapbox_navigation_route_alternative_color">#8694A5</color>
+    <color name="mapbox_navigation_route_alternative_congestion_yellow">#BEA087</color>
+    <color name="mapbox_navigation_route_alternative_congestion_red">#B58281</color>
+    <color name="mapbox_navigation_route_alternative_shield_color">#727E8D</color>
+
+    <color name="mapbox_navigation_route_upcoming_maneuver_arrow_color">#FFFFFF</color>
+    <color name="mapbox_navigation_route_upcoming_maneuver_arrow_border_color">#2D3F53</color>
+
+    <!-- Default Light Theme -->
+    <color name="mapbox_navigation_view_color_primary">#FFFFFF</color>
+    <color name="mapbox_navigation_view_color_secondary">#28353D</color>
+    <color name="mapbox_navigation_view_color_accent">#4882C6</color>
+    <color name="mapbox_navigation_view_color_primary_text">#424242</color>
+    <color name="mapbox_navigation_view_color_accent_text">#424242</color>
+    <color name="mapbox_navigation_view_color_divider">#D8D8D8</color>
+
+    <color name="mapbox_navigation_view_color_list_background">#2D3F53</color>
+
+    <color name="mapbox_navigation_view_color_banner_background">#2196F3</color>
+    <color name="mapbox_navigation_view_color_banner_primary_text">#FFFFFF</color>
+    <color name="mapbox_navigation_view_color_banner_secondary_text">#E6FFFFFF</color>
+    <color name="mapbox_navigation_view_color_banner_maneuver_primary">#FFFFFF</color>
+    <color name="mapbox_navigation_view_color_banner_maneuver_secondary">#4DFFFFFF</color>
+
+    <!-- Default Dark Theme -->
+    <color name="mapbox_navigation_view_color_primary_dark">#2D3F53</color>
+    <color name="mapbox_navigation_view_color_secondary_dark">#D8D8D8</color>
+    <color name="mapbox_navigation_view_color_accent_dark">#FFFFFF</color>
+    <color name="mapbox_navigation_view_color_primary_text_dark">#424242</color>
+    <color name="mapbox_navigation_view_color_accent_text_dark">#FFFFFF</color>
+    <color name="mapbox_navigation_view_color_divider_dark">#D8D8D8</color>
+
+    <color name="mapbox_navigation_view_color_list_background_dark">#2D3F53</color>
+
+    <color name="mapbox_navigation_view_color_banner_background_dark">#37516F</color>
+    <color name="mapbox_navigation_view_color_banner_primary_text_dark">#FFFFFF</color>
+    <color name="mapbox_navigation_view_color_banner_secondary_text_dark">#E6FFFFFF</color>
+    <color name="mapbox_navigation_view_color_banner_maneuver_primary_dark">#FFFFFF</color>
+    <color name="mapbox_navigation_view_color_banner_maneuver_secondary_dark">#4DFFFFFF</color>
+
+    <!-- Alert View -->
+    <color name="mapbox_navigation_view_color_progress">#4B75A4</color>
+    <color name="mapbox_navigation_view_color_progress_background">#39587B</color>
+
+    <color name="mapbox_navigation_view_color_progress_dark">#4B75A4</color>
+    <color name="mapbox_navigation_view_color_progress_background_dark">#39587B</color>
+
+    <array name="progressColor">
+        <item>@color/colorPrimary</item>
+    </array>
+
+</resources>
+

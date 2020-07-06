@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Navegacion">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="56dp"
+        mapbox:mapbox_cameraTargetLat="-15.493330956"
+        mapbox:mapbox_cameraTargetLng="-70.134735107"
+        mapbox:mapbox_cameraZoom="12"
+        tools:layout_editor_absoluteY="56dp" />
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/progress_circular"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        mapbox:cpb_background_progressbar_color="#b6bbd8"
+        mapbox:cpb_background_progressbar_width="22dp"
+        mapbox:cpb_progress_direction="to_right"
+        mapbox:cpb_progressbar_color="@color/colorPink"
+        mapbox:cpb_progressbar_width="10dp"
+        mapbox:cpb_round_border="true"
+        android:visibility="invisible"
+        mapbox:cpb_progress_max="100"/>
+    <TextView
+        android:id="@+id/count_porcentaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="75%"
+        android:textSize="20dp"
+        android:background="@drawable/circle_solidone"
+        android:visibility="invisible"
+        android:textColor="@color/colorPink"/>
+
+    <RelativeLayout
+        android:layout_marginTop="56dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="234dp">
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="end|bottom"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="8dp"
+            mapbox:fab_addButtonColorNormal="@color/colorVioletDark"
+            mapbox:fab_addButtonSize="normal"
+            mapbox:fab_labelStyle="@style/Etiquetas"
+            mapbox:fab_labelsPosition="left">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/back_to_camera_tracking_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                mapbox:fab_colorNormal="?attr/colorAccent"
+                mapbox:fab_icon="@drawable/icono_ic_my_location"
+                mapbox:fab_size="mini"
+                mapbox:fab_title="Localizar" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/trafico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                mapbox:fab_colorNormal="?attr/colorAccent"
+                mapbox:fab_icon="@drawable/icono_reglas"
+                mapbox:fab_size="mini"
+                mapbox:fab_title="mostrar trafico" />
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/Empesar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                mapbox:fab_colorNormal="?attr/colorAccent"
+                mapbox:fab_icon="@drawable/icono_information"
+                mapbox:fab_size="mini"
+                mapbox:fab_title="Empesar" />
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="222dp"
+        android:background="@drawable/custom_circlefive"
+        android:enabled="false"
+        android:text="Navegar"
+        android:textColor="@color/mapboxWhite"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/custom_circlesix"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/switchfunction"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Brujula"
+            android:textColor="@color/mapboxWhite"
+            android:textSize="15sp"
+            android:theme="@style/SwitchTheme" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="115dp"
+        android:gravity="center"
+        android:background="@drawable/custom_circlesix">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/perfilnavigation"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/perfil"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</RelativeLayout>

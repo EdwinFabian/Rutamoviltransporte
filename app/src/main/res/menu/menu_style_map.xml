@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_search"
+        android:icon="@drawable/icono_buscar"
+        android:title="buscar"
+        app:showAsAction="ifRoom"  />
+
+    <item
+        android:id="@+id/item1"
+        android:orderInCategory="100"
+        android:title="Mapas"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/menu_streets"
+                android:orderInCategory="100"
+                android:title="@string/menu_map_style_streets"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/menu_dark"
+                android:orderInCategory="100"
+                android:title="@string/menu_map_style_dark"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/menu_light"
+                android:orderInCategory="100"
+                android:title="@string/menu_map_style_light"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/menu_outdoors"
+                android:orderInCategory="100"
+                android:title="@string/menu_map_style_outdoors"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/menu_satellite"
+                android:orderInCategory="100"
+                android:title="@string/menu_map_style_satellite"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/menu_satellite_streets"
+                android:orderInCategory="100"
+                android:title="@string/menu_map_style_satellite_streets"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/item2"
+        android:orderInCategory="100"
+        android:title="Offline Maps"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/Registrar"
+                android:orderInCategory="100"
+                android:title="Registrar"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/Listar"
+                android:orderInCategory="100"
+                android:title="Listado"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+</menu>

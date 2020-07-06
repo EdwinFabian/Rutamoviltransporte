@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="300dp"
+android:layout_height="wrap_content"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_gravity="center">
+<LinearLayout
+    android:layout_marginTop="50dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/dialogstyletop"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/textvaloration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valoracion"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/dialogstylebottom"
+        android:padding="20dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/textcontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Danos su opinion para mejorar"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            />
+        <android.support.v7.widget.AppCompatRatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="0"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:stepSize="0.5"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="12dp">
+            <TextView
+                android:id="@+id/valoracionn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:text="Rating:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="15dp"/>
+            <TextView
+                android:id="@+id/calificacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:background="@drawable/custom_circleseven"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="15dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="#fff"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/input_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:hint="Opinion"
+                android:layout_marginBottom="15dp"
+                android:lines="2"/>
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:id="@+id/opinion"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/custom_circlefive"
+            android:text="Enviar"
+            android:textColor="#fff"/>
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_search"
+        android:icon="@drawable/icono_buscar"
+        android:title="buscar"
+        app:showAsAction="ifRoom"  />
+    <item
+        android:id="@+id/action_more"
+        android:icon="@drawable/icono_vertical"
+        android:title=""
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/action_add_contact"
+                android:icon="@drawable/icono_ajuste"
+                android:title="Amigos"
+                app:showAsAction="ifRoom"
+                />
+            <item
+                android:id="@+id/action_settings"
+                android:icon="@drawable/icono_explore"
+                android:title="Exploracion"
+                app:showAsAction="ifRoom"
+                />
+            <item
+                android:id="@+id/action_group"
+                android:icon="@drawable/icono_grupo"
+                android:title="Grupo"
+                app:showAsAction="ifRoom"
+                />
+            <item
+                android:id="@+id/action_about_us"
+                android:icon="@drawable/icono_reporte"
+                android:title="Ayuda"
+                app:showAsAction="ifRoom"
+                />
+
+        </menu>
+    </item>
+</menu>
